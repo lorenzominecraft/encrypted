@@ -1,0 +1,20 @@
+[04:02:15] [INFO ] Loaded script server_scripts:smithing.js in 0.001 s
+[04:02:15] [INFO ] Loaded script server_scripts:extended_crafting.js in 0.005 s
+[04:02:15] [INFO ] Hello, World! (You will see this line every time server resources reload)
+[04:02:15] [INFO ] Loaded script server_scripts:recipes.js in 0.009 s
+[04:02:15] [INFO ] Loaded script server_scripts:tags.js in 0.001 s
+[04:02:15] [INFO ] Loaded script server_scripts:quality_of_life.js in 0.002 s
+[04:02:15] [INFO ] Loaded script server_scripts:rightclick.js in 0.005 s
+[04:02:15] [INFO ] Loaded script server_scripts:matter.js in 0.004 s
+[04:02:15] [INFO ] Loaded script server_scripts:tech.js in 0.003 s
+[04:02:15] [INFO ] Loaded script server_scripts:chemistry.js in 0.002 s
+[04:02:15] [INFO ] Loaded 9/9 KubeJS server scripts in 0.042 s
+[04:02:15] [INFO ] Scripts loaded
+[04:02:15] [INFO ] Scanning recipes...
+[04:02:34] [INFO ] [items] Found 2078 tags, added 144 objects, removed 0 objects
+[04:02:34] [INFO ] [items] Found 2078 tags, added 144 objects, removed 0 objects
+[04:02:49] [INFO ] Found 27750 recipes and 0 failed recipes in 1.522 s
+[04:02:50] [INFO ] Posted recipe events in 806.9 ms
+[04:02:51] [INFO ] Modified & removed recipes in 608.3 ms
+[04:02:51] [INFO ] Added recipes in 12.34 ms
+[04:02:51] [INFO ] Added 137 recipes, removed 384 recipes, modified 206 recipes, with 0 failed recipes and 0 fall-backed recipes

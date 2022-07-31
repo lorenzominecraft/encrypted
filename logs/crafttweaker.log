@@ -1,0 +1,37 @@
+[04:00:50.457][INFO]: Successfully identified and loaded plugin jeitweaker:default
+[04:00:50.490][INFO]: Successfully identified and loaded plugin crafttweaker:builtin
+[04:00:50.493][INFO]: Successfully identified and loaded plugin mekanism:crt_plugin
+[04:00:54.362][INFO]: The following mods have explicit CraftTweaker support through the default plugin:
+[04:00:54.378][INFO]: - 'crafttweaker' at version '9.1.175'
+[04:00:54.379][INFO]: - 'exnihilosequentia' at version '1.18.2-20220714-011314'
+[04:00:54.380][INFO]: - 'extendedcrafting' at version '4.1.1'
+[04:00:54.380][INFO]: - 'immersiveengineering' at version '1.18.2-8.1.0-150'
+[04:00:54.380][INFO]: - 'jeitweaker' at version '3.0.0.8'
+[04:00:54.380][INFO]: - 'lazierae2' at version '3.1.0'
+[04:00:54.380][INFO]: - 'mekanism' at version '10.2.5'
+[04:00:54.380][INFO]: - 'naturesaura_tweaker' at version '0.0.1'
+[04:00:54.380][INFO]: - 'pneumaticcraft' at version '1.18.2-3.3.1-110'
+[04:00:54.380][INFO]: - 'thermal' at version '1.6.3.28'
+[04:00:54.380][INFO]: - 'thermal_foundation' at version '1.6.3.28'
+[04:01:17.080][INFO]: Started loading scripts for loader 'mekanismcontent'
+[04:01:18.197][INFO]: Compiling and executing scripts
+[04:01:19.335][INFO]: Successfully initialized modules [mods, crafttweaker, expansions]
+[04:01:19.678][INFO]: Execution for loader 'mekanismcontent' completed successfully
+[04:01:19.678][INFO]: Registering 0 custom gases.
+[04:01:19.690][INFO]: Registering 0 custom infuse types.
+[04:01:19.708][INFO]: Registering 0 custom pigments.
+[04:01:19.717][INFO]: Registering 0 custom robit skins.
+[04:01:19.729][INFO]: Registering 0 custom slurries.
+[04:01:26.307][INFO]: Started loading scripts for loader 'initialize'
+[04:01:26.337][INFO]: Compiling and executing scripts
+[04:01:26.338][INFO]: Successfully initialized modules [crafttweaker, expansions]
+[04:01:26.349][INFO]: Execution for loader 'initialize' completed successfully
+[04:03:02.072][INFO]: Started loading scripts for loader 'crafttweaker'
+[04:03:02.098][INFO]: Compiling and executing scripts
+[04:03:02.284][INFO]: Successfully initialized modules [mods, crafttweaker, expansions]
+[04:03:02.288][INFO]: Loading file 'script.zs' with priority 0
+[04:03:02.341][INFO]: Adding 'naturesaura:tree_ritual' recipe, with name: 'crafttweaker:machine_frame' that outputs: '<item:create:andesite_casing> * 2'
+[04:03:02.342][INFO]: Adding 'naturesaura:tree_ritual' recipe, with name: 'crafttweaker:andesite_alloy' that outputs: '<item:create:andesite_alloy> * 3'
+[04:03:02.350][INFO]: Adding 'occultism:crushing' recipe, with name: 'crafttweaker:crushed_gold_powder' that outputs: '<item:naturesaura:gold_powder>'
+[04:03:02.350][INFO]: Execution for loader 'crafttweaker' completed successfully
+[04:03:02.351][INFO]: This reload was made possible by SquidDev and more! Become a patron at https://patreon.com/jaredlll08?s=crtmod
