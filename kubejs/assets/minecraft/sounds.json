@@ -10,5 +10,10 @@
       "custom/challenge"
     ],
   "replace": true
+  },
+  "encrypted.finishpack": {
+    "sounds": [
+      "custom/finishpack"
+    ]
   }
 }

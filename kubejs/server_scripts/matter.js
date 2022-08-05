@@ -60,7 +60,7 @@ onEvent("recipes", (event) => {
     event.shaped("byg:blue_enchanted_sapling", [" A ", "AA ", "AA "], {
         A: 'kubejs:encrypted_matter',
     }).noShrink().noMirror();
-    event.shaped("allthemodium:ancient_sapling", ["A A", "AAA", " A "], {
+    event.shaped("hexerei:mahogany_sapling", ["A A", "AAA", " A "], {
         A: 'kubejs:encrypted_matter',
     }).noShrink().noMirror();
     event.shaped("quark:red_blossom_sapling", ["AAA", "A A", "AAA"], {

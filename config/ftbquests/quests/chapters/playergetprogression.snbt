@@ -132,13 +132,7 @@
 		}
 		{
 			title: "Magicae"
-			icon: {
-				id: "occultism:book_of_binding_bound_djinni"
-				Count: 1b
-				tag: {
-					spiritName: "Azakcloarc"
-				}
-			}
+			icon: "bloodmagic:altar"
 			x: 6.0d
 			y: 0.0d
 			subtitle: "Magic"
@@ -150,7 +144,7 @@
 			tasks: [{
 				id: "6B5D2E6770057F1A"
 				type: "checkmark"
-				title: "Mystical Indeed"
+				title: "Magic in the air"
 			}]
 			rewards: [{
 				id: "2729738ED7A5B243"

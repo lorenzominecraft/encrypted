@@ -306,7 +306,7 @@
 			tasks: [{
 				id: "677BE113924D5433"
 				type: "item"
-				item: "storagedrawers:creative_vending_upgrade"
+				item: "kubejs:finished_program"
 			}]
 			rewards: [{
 				id: "0B09B02D92987DC4"

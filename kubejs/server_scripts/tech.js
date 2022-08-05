@@ -3,7 +3,10 @@
 onEvent('recipes', event => {
 
     event.remove({output:'create:andesite_alloy'})
-    event.remove({output:'create:andesite_casing'})
+    event.remove({id:'create:item_application/andesite_casing_from_log'})
+    event.remove({id:'create:item_application/andesite_casing_from_wood'})
+    event.remove({id:'create:item_application/andesite_casing_from_log_using_deployer'})
+    event.remove({id:'create:item_application/andesite_casing_from_wood_using_deployer'})
     event.remove({output:'create:brass_casing'})
     event.remove({output:'create:copper_casing'})
     event.remove({output:'mekanism:steel_casing'})
@@ -40,7 +43,7 @@ onEvent('recipes', event => {
     event.recipes.createMixing('create:rose_quartz', ['#forge:gems/quartz','8x #forge:dusts/redstone'])
     event.recipes.createMixing('byg:end_sand', ['minecraft:ender_pearl','#forge:sand']).superheated()
 
-    event.recipes.createSequencedAssembly([Item.of('create:andesite_casing').withChance(100.0)],'kubejs:wood_machine_frame', [event.recipes.createDeploying('create:andesite_casing', ['kubejs:wood_machine_frame', 'create:andesite_alloy'])]).transitionalItem('kubejs:wood_machine_frame').loops(2)
+    //event.recipes.createSequencedAssembly([Item.of('create:andesite_casing').withChance(100.0)],'kubejs:wood_machine_frame', [event.recipes.createDeploying('create:andesite_casing', ['kubejs:wood_machine_frame', 'create:andesite_alloy'])]).transitionalItem('kubejs:wood_machine_frame').loops(2)
 
     event.recipes.createSequencedAssembly([Item.of('kubejs:encrypted_ore').withChance(69.0)],'minecraft:stone', [event.recipes.createDeploying('kubejs:encrypted_ore', ['#forge:stone', 'kubejs:encrypted_matter'])]).transitionalItem('minecraft:stone').loops(4)
 
@@ -48,9 +51,9 @@ onEvent('recipes', event => {
 
     event.recipes.createPressing('kubejs:wooden_plate','#minecraft:planks')
 
-    event.recipes.createPressing('4x naturesaura:gold_powder','naturesaura:gold_leaf')
+    //event.recipes.createPressing('4x naturesaura:gold_powder','naturesaura:gold_leaf')
 
-    event.recipes.createDeploying('minecraft:white_concrete', ['#forge:cobblestone',"kubejs:encrypted_matter"])
+    //event.recipes.createDeploying('minecraft:white_concrete', ['#forge:cobblestone',"kubejs:encrypted_matter"])
 
     event.recipes.createDeploying('kubejs:creative_essence', ['kubejs:encrypted_ingot',"kubejs:encrypted_ingot"])
 

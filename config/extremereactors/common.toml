@@ -80,10 +80,10 @@
 	[common.recipes]
 		#If set, charcoal will be smeltable into graphite bars.
 		#Disable this if other mods need to smelt charcoal into their own products.
-		registerCharcoalForSmelting = true
+		registerCharcoalForSmelting = false
 		#If set, coal will be smeltable into graphite bars.
 		#Disable this if other mods need to smelt coal into their own products.
-		registerCoalForSmelting = true
+		registerCoalForSmelting = false
 		#If set, coal blocks will be smeltable into graphite blocks.
 		#Disable this if other mods need to smelt coal blocks into their own products.
 		registerCoalBlockForSmelting = true
@@ -92,7 +92,7 @@
 	[common.worldgen]
 		#If false, disables all world gen from Extreme Reactors;
 		#all other worldgen settings are automatically ignored.
-		enableWorldGen = true
+		enableWorldGen = false
 		#Re-run world gen in chunks that have already been generated (once they have been loaded), 
 		#but have not been modified by Extreme Reactors before.
 		enableWorldRegeneration = false

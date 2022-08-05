@@ -113,7 +113,7 @@
 			description: [
 				"You are a Software Engineer who works at \"Krypt Tech.\""
 				""
-				"After hard work, \"Kript Tech.\" succeded at making a machine that can simulate reality. They called it \"SRSM\"."
+				"After hard work, \"Krypt Tech.\" succeded at making a machine that can simulate reality. They called it \"SRSM\"."
 				""
 				"One day, and while you were working on the \"SRSM\", It Developed a BUG_ that caused it to transport you to a whole new <simulated/> reality."
 				""
@@ -169,7 +169,7 @@
 			shape: "hexagon"
 			subtitle: "Moneyyyyyyyyyy"
 			description: [
-				"CryptoCurrencies can be used to buy items from the E-shop"
+				"CryptoCurrencies can be used to buy items from the Amadron from PNC:R"
 				""
 				"Spend it wisely"
 				""
@@ -181,12 +181,25 @@
 				type: "checkmark"
 				title: "Crypto Currency"
 			}]
-			rewards: [{
-				id: "1E6F5FA5BADBD7D3"
-				type: "item"
-				item: "kubejs:crypto_currency"
-				count: 2
-			}]
+			rewards: [
+				{
+					id: "1E6F5FA5BADBD7D3"
+					type: "item"
+					item: "kubejs:crypto_currency"
+					count: 2
+				}
+				{
+					id: "21C0264BA2557E15"
+					type: "item"
+					item: {
+						id: "pneumaticcraft:amadron_tablet"
+						Count: 1b
+						tag: {
+							"pneumaticcraft:air": 30000
+						}
+					}
+				}
+			]
 		}
 	]
 }

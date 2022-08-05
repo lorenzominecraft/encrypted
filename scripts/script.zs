@@ -17,7 +17,6 @@ JEI.hideIngredient(<item:exnihilosequentia:tin_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:uranium_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:platinum_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:silver_pieces>);
-JEI.hideIngredient(<item:exnihilomekanism:osmium_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:zinc_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:nickel_pieces>);
 JEI.hideIngredient(<item:exnihilosequentia:oak_seeds>);
@@ -82,32 +81,8 @@ JEI.hideCategory("create:mystery_conversion");
 JEI.hideCategory("reliquary:alkahestry_charging");
 JEI.hideCategory("reliquary:alkahestry_crafting");
 
-<item:chemlib:element_carbon>.addTooltip("§6Can be used as furnace fuel");
-<item:chemlib:element_hydrogen>.addTooltip("§6Can be used as furnace fuel");
-<item:kubejs:new_compound_ethylene>.addTooltip("§3C₂H₄");
-
-
-<recipetype:naturesaura:tree_ritual>.addRecipe("machine_frame",<item:minecraft:oak_sapling>,<item:create:andesite_casing>*2, 200,[
-	<item:kubejs:wood_machine_frame>,
-	<item:create:andesite_alloy>,
-	<item:create:andesite_alloy>
-]);
-
-<recipetype:naturesaura:tree_ritual>.addRecipe("andesite_alloy",<item:minecraft:oak_sapling>,<item:create:andesite_alloy>*3, 200,[
-	<item:minecraft:andesite>,
-	<item:chemlib:element_iron>,
-	<item:chemlib:element_tungsten>,
-	<item:chemlib:element_zinc>,
-	<item:chemlib:compound_silicon_dioxide>,
-	<item:chemlib:compound_silicon_dioxide>,
-	<item:chemlib:compound_silicon_dioxide>,
-	<item:chemlib:compound_silicon_dioxide>
-
-]);
-
-recipes.addJsonRecipe("crushed_gold_powder", {
-	type: "occultism:crushing",
-	ingredient: <item:naturesaura:gold_leaf>,
-	result: <item:naturesaura:gold_powder>*8,
-	crushing_time: 200
-});
+<item:chemlib:element_carbon>.addTooltip("§6Can be used as furnace fuel§r");
+<item:chemlib:element_hydrogen>.addTooltip("§6Can be used as furnace fuel§r");
+<item:kubejs:new_compound_ethylene>.addTooltip("§3C₂H₄§r");
+<item:kubejs:raw_andesite_alloy>.addTooltip("§6§kx§r §4Blood Thirsty§r §6§kx§r");
+<item:kubejs:finished_program>.addTooltip("§b§k. §r§bGet back to reality...§r");

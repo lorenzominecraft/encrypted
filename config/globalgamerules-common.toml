@@ -2,7 +2,7 @@
 #Gamerules that are set when a world is loaded
 [gamerules]
 	#Whether advancements should be announced in chat
-	announce_advancements = false
+	announce_advancements = true
 	#Whether command blocks should notify admins when they perform commands
 	command_block_output = false
 	#Whether the server should skip checking player speed when the player is wearing elytra. Often helps with jittering due to lag in multiplayer

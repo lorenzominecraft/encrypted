@@ -5,182 +5,237 @@ onEvent('recipes', e => {
 
 // The Ultimate Ingot
 e.custom({
-  "type": "extendedcrafting:shaped_table",
-  "pattern": [
-    "ABCDEFGHI",
-    "JKLMNOPQR",
-    "STUVWXYZa",
-    "bcdefghij",
-    "klmnopqrs",
-    "tuvwxyz01",
-    "         ",
-    "         ",
-    "         "
-  ],
-  "key": {
-    "A": {
-      "item": "alltheores:aluminum_ingot"
-    },
-    "B": {
-      "item": "minecraft:iron_ingot"
-    },
-    "C": {
-      "item": "alltheores:silver_ingot"
-    },
-    "D": {
-      "item": "alltheores:nickel_ingot"
-    },
-    "E": {
-      "item": "chemlib:ingot_calcium"
-    },
-    "F": {
-      "item": "chemlib:ingot_chromium"
-    },
-    "G": {
-      "item": "chemlib:ingot_cerium"
-    },
-    "H": {
-      "item": "chemlib:ingot_sodium"
-    },
-    "I": {
-      "item": "chemlib:ingot_silicon"
-    },
-    "J": {
-      "item": "chemlib:ingot_cesium"
-    },
-    "K": {
-      "item": "chemlib:ingot_praseodymium"
-    },
-    "L": {
-      "item": "minecraft:gold_ingot"
-    },
-    "M": {
-      "item": "chemlib:ingot_scandium"
-    },
-    "N": {
-      "item": "chemlib:ingot_ruthenium"
-    },
-    "O": {
-      "item": "chemlib:ingot_yttrium"
-    },
-    "P": {
-      "item": "chemlib:ingot_zirconium"
-    },
-    "Q": {
-      "item": "chemlib:ingot_potassium"
-    },
-    "R": {
-      "item": "chemlib:ingot_cadmium"
-    },
-    "S": {
-      "item": "beyond_earth:desh_ingot"
-    },
-    "T": {
-      "item": "minecraft:copper_ingot"
-    },
-    "U": {
-      "item": "chemlib:ingot_strontium"
-    },
-    "V": {
-      "item": "chemlib:ingot_antimony"
-    },
-    "W": {
-      "item": "beyond_earth:calorite_ingot"
-    },
-    "X": {
-      "item": "chemlib:ingot_gallium"
-    },
-    "Y": {
-      "item": "chemlib:ingot_rhodium"
-    },
-    "Z": {
-      "item": "chemlib:ingot_hassium"
-    },
-    "a": {
-      "item": "chemlib:ingot_molybdenum"
-    },
-    "b": {
-      "item": "chemlib:ingot_tellurium"
-    },
-    "c": {
-      "item": "chemlib:ingot_rubidium"
-    },
-    "d": {
-      "item": "chemlib:ingot_neodymium"
-    },
-    "e": {
-      "item": "beyond_earth:ostrum_ingot"
-    },
-    "f": {
-      "item": "chemlib:ingot_magnesium"
-    },
-    "g": {
-      "item": "chemlib:ingot_manganese"
-    },
-    "h": {
-      "item": "chemlib:ingot_vanadium"
-    },
-    "i": {
-      "item": "chemlib:ingot_selenium"
-    },
-    "j": {
-      "item": "chemlib:ingot_copernicium"
-    },
-    "k": {
-      "item": "chemlib:ingot_arsenic"
-    },
-    "l": {
-      "item": "chemlib:ingot_technetium"
-    },
-    "m": {
+  "type": "extendedcrafting:shapeless_table",
+  "ingredients": [
+    {
       "item": "chemlib:ingot_lithium"
     },
-    "n": {
-      "item": "chemlib:ingot_titanium"
-    },
-    "o": {
-      "item": "chemlib:ingot_palladium"
-    },
-    "p": {
-      "item": "chemlib:ingot_barium"
-    },
-    "q": {
-      "item": "create:zinc_ingot"
-    },
-    "r": {
-      "item": "alltheores:tin_ingot"
-    },
-    "s": {
-      "item": "chemlib:ingot_lanthanum"
-    },
-    "t": {
-      "item": "chemlib:ingot_terbium"
-    },
-    "u": {
-      "item": "chemlib:ingot_neptunium"
-    },
-    "v": {
-      "item": "chemlib:ingot_niobium"
-    },
-    "w": {
-      "item": "chemlib:ingot_hafnium"
-    },
-    "x": {
-      "item": "chemlib:ingot_cobalt"
-    },
-    "y": {
-      "item": "chemlib:ingot_germanium"
-    },
-    "z": {
-      "item": "chemlib:ingot_boron"
-    },
-    "0": {
+    {
       "item": "chemlib:ingot_beryllium"
     },
-    "1": {
+    {
+      "item": "chemlib:ingot_boron"
+    },
+    {
+      "item": "chemlib:ingot_sodium"
+    },
+    {
+      "item": "chemlib:ingot_magnesium"
+    },
+    {
+      "item": "alltheores:aluminum_ingot"
+    },
+    {
+      "item": "chemlib:ingot_silicon"
+    },
+    {
+      "item": "chemlib:ingot_potassium"
+    },
+    {
+      "item": "chemlib:ingot_calcium"
+    },
+    {
+      "item": "chemlib:ingot_scandium"
+    },
+    {
+      "item": "chemlib:ingot_titanium"
+    },
+    {
+      "item": "chemlib:ingot_vanadium"
+    },
+    {
+      "item": "chemlib:ingot_chromium"
+    },
+    {
+      "item": "chemlib:ingot_manganese"
+    },
+    {
+      "item": "minecraft:iron_ingot"
+    },
+    {
+      "item": "tconstruct:cobalt_ingot"
+    },
+    {
+      "item": "alltheores:nickel_ingot"
+    },
+    {
+      "item": "minecraft:copper_ingot"
+    },
+    {
+      "item": "alltheores:zinc_ingot"
+    },
+    {
+      "item": "chemlib:ingot_gallium"
+    },
+    {
+      "item": "chemlib:ingot_germanium"
+    },
+    {
+      "item": "chemlib:ingot_arsenic"
+    },
+    {
+      "item": "chemlib:ingot_selenium"
+    },
+    {
+      "item": "chemlib:ingot_rubidium"
+    },
+    {
+      "item": "chemlib:ingot_strontium"
+    },
+    {
+      "item": "chemlib:ingot_yttrium"
+    },
+    {
+      "item": "chemlib:ingot_zirconium"
+    },
+    {
+      "item": "chemlib:ingot_niobium"
+    },
+    {
+      "item": "chemlib:ingot_molybdenum"
+    },
+    {
+      "item": "chemlib:ingot_technetium"
+    },
+    {
+      "item": "chemlib:ingot_ruthenium"
+    },
+    {
+      "item": "chemlib:ingot_rhodium"
+    },
+    {
+      "item": "chemlib:ingot_palladium"
+    },
+    {
+      "item": "alltheores:silver_ingot"
+    },
+    {
+      "item": "chemlib:ingot_cadmium"
+    },
+    {
       "item": "chemlib:ingot_indium"
+    },
+    {
+      "item": "alltheores:tin_ingot"
+    },
+    {
+      "item": "chemlib:ingot_antimony"
+    },
+    {
+      "item": "chemlib:ingot_tellurium"
+    },
+    {
+      "item": "chemlib:ingot_cesium"
+    },
+    {
+      "item": "chemlib:ingot_barium"
+    },
+    {
+      "item": "chemlib:ingot_lanthanum"
+    },
+    {
+      "item": "chemlib:ingot_cerium"
+    },
+    {
+      "item": "chemlib:ingot_praseodymium"
+    },
+    {
+      "item": "chemlib:ingot_neodymium"
+    },
+    {
+      "item": "chemlib:ingot_promethium"
+    },
+    {
+      "item": "chemlib:ingot_samarium"
+    },
+    {
+      "item": "chemlib:ingot_europium"
+    },
+    {
+      "item": "chemlib:ingot_gadolinium"
+    },
+    {
+      "item": "chemlib:ingot_terbium"
+    },
+    {
+      "item": "chemlib:ingot_dysprosium"
+    },
+    {
+      "item": "chemlib:ingot_holmium"
+    },
+    {
+      "item": "chemlib:ingot_erbium"
+    },
+    {
+      "item": "chemlib:ingot_thulium"
+    },
+    {
+      "item": "chemlib:ingot_ytterbium"
+    },
+    {
+      "item": "chemlib:ingot_lutetium"
+    },
+    {
+      "item": "chemlib:ingot_hafnium"
+    },
+    {
+      "item": "chemlib:ingot_tantalum"
+    },
+    {
+      "item": "chemlib:ingot_tungsten"
+    },
+    {
+      "item": "chemlib:ingot_rhenium"
+    },
+    {
+      "item": "alltheores:osmium_ingot"
+    },
+    {
+      "item": "alltheores:iridium_ingot"
+    },
+    {
+      "item": "alltheores:platinum_ingot"
+    },
+    {
+      "item": "minecraft:gold_ingot"
+    },
+    {
+      "item": "chemlib:ingot_thallium"
+    },
+    {
+      "item": "alltheores:lead_ingot"
+    },
+    {
+      "item": "chemlib:ingot_bismuth"
+    },
+    {
+      "item": "chemlib:ingot_polonium"
+    },
+    {
+      "item": "chemlib:ingot_astatine"
+    },
+    {
+      "item": "chemlib:ingot_francium"
+    },
+    {
+      "item": "chemlib:ingot_radium"
+    },
+    {
+      "item": "chemlib:ingot_actinium"
+    },
+    {
+      "item": "chemlib:ingot_thorium"
+    },
+    {
+      "item": "chemlib:ingot_protactinium"
+    },
+    {
+      "item": "alltheores:uranium_ingot"
+    },
+    {
+      "item": "minecraft:netherite_ingot"
     }
-  },
+  ],
   "result": {
     "item": "extendedcrafting:the_ultimate_ingot"
   }
@@ -296,7 +351,7 @@ e.custom({
       "item": "pneumaticcraft:creative_upgrade"
     },
     "I": {
-      "item": "storagedrawers:creative_storage_upgrade"
+      "item": "kubejs:encrypted_ingot"
     },
     "J": {
       "item": "create:creative_motor"
@@ -306,7 +361,7 @@ e.custom({
     }
   },
   "result": {
-    "item": "storagedrawers:creative_vending_upgrade"
+    "item": "kubejs:finished_program"
   }
 })
 

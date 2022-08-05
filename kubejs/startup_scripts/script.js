@@ -8,14 +8,16 @@ onEvent('item.registry', event => {
 	event.create('new_compound_ethylene').displayName('Ethylene')
 
 	event.create('crypto_currency').displayName('Crypto Currency').glow(true)
-	event.create('encrypted_ingot').displayName('§5Encrypted Ingot').glow(true)
+	event.create('encrypted_ingot').displayName('§5Encrypted Ingot§r').glow(true)
 	event.create('encrypted_matter').displayName('Encrypted Matter')
 
+	event.create('finished_program').displayName('§3<§1Finished_program§3/>_§r').glow(true)
 	event.create('creative_essence').displayName('Creative Essence').glow(true)
+	event.create('raw_andesite_alloy').displayName('§6Lifeless §rAndesite Mixture')
 
 	event.create('wooden_gear').displayName('Wooden Gear')
 	event.create('wooden_plate').displayName('Wooden Plate')
-	event.create('incomplete_machine_frame').type('create:sequenced_assembly').displayName('Incomplete Machine Frame')
+	event.create('incomplete_machine_frame', 'create:sequenced_assembly').displayName('Incomplete Machine Frame')
 	
 	
 

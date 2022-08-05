@@ -1,0 +1,13 @@
+{
+  "type": "bloodmagic:altar",
+  "input": {
+    "tag": "minecraft:logs"
+  },
+  "output": {
+    "item": "forbidden_arcanus:edelwood_log"
+  },
+  "upgradeLevel": 0,
+  "altarSyphon": 2000,
+  "consumptionRate": 5,
+  "drainRate": 5
+}

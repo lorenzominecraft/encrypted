@@ -7,7 +7,7 @@
 	#Enable at your own risk
 	opMode = false
 	#Enable mystical crops
-	enableMysticalCrops = false
+	enableMysticalCrops = true
 	#Use whitelist instead of blacklist
 	useWhitelist = false
 	#Range for bonemeal effect
@@ -19,7 +19,7 @@
 	chance = 0.5
 	#List of blocks to blacklist from twerking
 	#Tags can be used by using #minecraft:<tag_name> or #modid:<tag_name>
-	blacklist = ["minecraft:grass_block", "minecraft:grass", "minecraft:tall_grass", "minecraft:netherrack", "minecraft:warped_nylium", "minecraft:crimson_nylium"]
+	blacklist = ["minecraft:grass_block", "minecraft:grass", "minecraft:tall_grass", "minecraft:netherrack", "minecraft:warped_nylium", "minecraft:crimson_nylium", "byg:overgrown_netherrack", "minecraft:weeping_vines", "nethersdelight:propelplant_cane"]
 	#If useWhitelist is true use, only allow twerking the list below
 	#Tags can be used by using #minecraft:<tag_name> or #modid:<tag_name>
 	whitelist = []

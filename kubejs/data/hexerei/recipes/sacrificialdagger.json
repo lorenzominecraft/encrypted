@@ -1,0 +1,39 @@
+{
+  "type": "hexerei:mixingcauldron",
+  "liquid": {
+    "fluid": "minecraft:lava"
+  },
+  "ingredients": [
+    {
+      "item": "chemlib:ingot_germanium"
+    },
+    {
+      "item": "chemlib:ingot_selenium"
+    },
+    {
+      "item": "chemlib:ingot_selenium"
+    },
+    {
+      "item": "chemlib:ingot_selenium"
+    },
+    {
+      "item": "chemlib:ingot_selenium"
+    },
+    {
+      "item": "chemlib:ingot_scandium"
+    },
+    {
+      "item": "chemlib:ingot_scandium"
+    },
+    {
+      "item": "chemlib:ingot_scandium"
+    }
+  ],
+  "output": {
+    "item": "bloodmagic:sacrificialdagger"
+  },
+  "liquidOutput": {
+    "fluid": "minecraft:lava"
+  },
+  "fluidLevelsConsumed": 2000
+}

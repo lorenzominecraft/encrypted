@@ -27,3 +27,22 @@ onEvent('block.right_click', event => {
       event.cancel()
   }
 })
+
+onEvent("item.right_click", event => {
+
+  command = `/clear @s kubejs:finished_program 1`
+  yourItem = Item.of('kubejs:finished_program')
+
+  if (event.player.mainHandItem == yourItem) {
+      if (!event.player.fake) {
+          event.player.mainHandItem.count -= 1;
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run title @s title {"text":"\u25b6 Returning to Reality...","bold":true,"color":"aqua"}`)
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run title @s subtitle {"text":"You won ! GG","bold":true,"color":"dark_aqua"}`)
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run time set midnight`)
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run summon minecraft:lightning_bolt ~ ~5 ~`)
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run particle cofh_core:straight_arc ~ ~ ~ ~ ~ ~ 0 50 force`)
+          event.server.runCommandSilent(`execute at ${event.player.id} as ${event.player.id} run playsound minecraft:encrypted.finishpack master @s ~ ~ ~ 3`)
+          
+      }
+  }
+})

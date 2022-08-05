@@ -4,408 +4,17 @@
 	order_index: 3
 	filename: "mystical_indeed"
 	title: "Magicae "
-	icon: {
-		id: "occultism:book_of_binding_bound_djinni"
-		Count: 1b
-		tag: {
-			spiritName: "Azakcloarc"
-		}
-	}
+	icon: "bloodmagic:altar"
 	subtitle: ["Magic"]
 	default_quest_shape: "circle"
 	default_hide_dependency_lines: false
 	quests: [
 		{
-			x: 2.5d
-			y: 0.0d
-			subtitle: "Do demons dream ?"
-			dependencies: ["634DD0127AC97172"]
-			id: "2B1CCB9E3F6679AC"
-			tasks: [{
-				id: "4DFBF8035AB16F9A"
-				type: "item"
-				item: "occultism:datura"
-			}]
-			rewards: [
-				{
-					id: "5384F56E218867B6"
-					type: "item"
-					item: "occultism:datura"
-				}
-				{
-					id: "0426C9A87F955CCA"
-					type: "item"
-					item: "kubejs:crypto_currency"
-				}
-			]
-		}
-		{
-			title: "Spirit fire"
-			x: 4.5d
-			y: 0.0d
-			subtitle: "Fire but purple"
-			description: ["spirit fire is made by lighting demon's fruit on fire"]
-			dependencies: ["2B1CCB9E3F6679AC"]
-			id: "4751865817E92F79"
-			tasks: [{
-				id: "5E82D1CDB604DA0A"
-				type: "checkmark"
-				icon: "occultism:spirit_fire"
-			}]
-			rewards: [
-				{
-					id: "652952FB16AAAC82"
-					type: "item"
-					item: "occultism:spirit_lantern"
-					count: 4
-				}
-				{
-					id: "0015C65943A29535"
-					type: "item"
-					item: "kubejs:crypto_currency"
-				}
-			]
-		}
-		{
-			x: 0.5d
-			y: 0.0d
-			subtitle: "Can be Obtained through combining diffrent kinds of chemicals"
-			dependencies: ["5FE402368B5DB3D7"]
-			id: "634DD0127AC97172"
-			tasks: [{
-				id: "5143EEE6D745F35C"
-				type: "item"
-				item: "occultism:datura_seeds"
-			}]
-			rewards: [
-				{
-					id: "04AA0E5DAB8F1ECA"
-					type: "item"
-					item: "occultism:dictionary_of_spirits"
-				}
-				{
-					id: "2549DB48AE482400"
-					type: "item"
-					item: "kubejs:crypto_currency"
-				}
-			]
-		}
-		{
-			x: 6.0d
-			y: 1.0d
-			dependencies: ["4751865817E92F79"]
-			id: "02154E9DF5D802BC"
-			tasks: [{
-				id: "0A3C0AD50F45C305"
-				type: "item"
-				item: "occultism:otherstone"
-			}]
-			rewards: [{
-				id: "5410B44973B75009"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			title: "Otherworld sapling"
-			x: 6.0d
-			y: -1.0d
-			dependencies: ["4751865817E92F79"]
-			id: "0BB97D1428BCC8E4"
-			tasks: [{
-				id: "273428378F5605B1"
-				type: "item"
-				title: "Any #occultism:saplings/otherworld"
-				item: {
-					id: "itemfilters:tag"
-					Count: 1b
-					tag: {
-						value: "occultism:saplings/otherworld"
-					}
-				}
-			}]
-			rewards: [{
-				id: "77AF5086E23895DA"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 7.5d
-			y: -1.0d
-			dependencies: ["0BB97D1428BCC8E4"]
-			id: "49AFD95386E1952D"
-			tasks: [{
-				id: "28DDFDA6347BB949"
-				type: "item"
-				item: "occultism:otherworld_log"
-			}]
-			rewards: [{
-				id: "76CC7A92505DAE14"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
 			x: 9.0d
-			y: -1.0d
-			dependencies: ["49AFD95386E1952D"]
-			id: "3C9BEEC83DEAAC63"
-			tasks: [{
-				id: "694BD126F7AEC2B5"
-				type: "item"
-				item: "occultism:otherworld_ashes"
-			}]
-			rewards: [{
-				id: "290DCAB5FEE89827"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 9.0d
-			y: 1.0d
-			dependencies: ["02154E9DF5D802BC"]
-			id: "0F68C547272F7E92"
-			tasks: [{
-				id: "042DCCB193C28265"
-				type: "item"
-				item: "occultism:burnt_otherstone"
-			}]
-			rewards: [{
-				id: "6CA90B370DD80C93"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 10.5d
-			y: 0.0d
-			dependencies: [
-				"0F68C547272F7E92"
-				"3C9BEEC83DEAAC63"
-			]
-			id: "741590B8F8611917"
-			tasks: [{
-				id: "468425A75ED72E39"
-				type: "item"
-				item: "occultism:chalk_white_impure"
-			}]
-			rewards: [{
-				id: "4C788E3F1363F689"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 6.0d
-			y: 4.5d
-			dependencies: ["4751865817E92F79"]
-			id: "3444679EF00AA3B0"
-			tasks: [{
-				id: "791BDECEF4844A37"
-				type: "item"
-				item: "occultism:purified_ink"
-			}]
-			rewards: [{
-				id: "0101A54230A0152F"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 12.0d
-			y: 4.5d
-			dependencies: ["3444679EF00AA3B0"]
-			id: "7312A08BC35E567B"
-			tasks: [{
-				id: "5F55DCC69D40A3E1"
-				type: "item"
-				item: "occultism:book_of_binding_foliot"
-			}]
-			rewards: [{
-				id: "71A63C72F1F57D34"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 7.5d
-			y: 3.0d
-			dependencies: ["02154E9DF5D802BC"]
-			id: "1C4E95BC643258C8"
-			tasks: [{
-				id: "65DBE62E69742A0B"
-				type: "item"
-				item: "occultism:sacrificial_bowl"
-				count: 5L
-			}]
-			rewards: [{
-				id: "52A359F8ABA37B33"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 12.0d
-			y: 3.0d
-			dependencies: ["1C4E95BC643258C8"]
-			id: "78F619ABA021D434"
-			tasks: [{
-				id: "0F0A77156F3E139F"
-				type: "item"
-				item: "occultism:golden_sacrificial_bowl"
-			}]
-			rewards: [{
-				id: "4AFE7F9DA71AC134"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 12.0d
-			y: 6.0d
-			dependencies: ["54AA60A28A795CC6"]
-			id: "03241CC25F0AB160"
-			tasks: [{
-				id: "07CABEF41859DB39"
-				type: "item"
-				item: "occultism:candle_white"
-			}]
-			rewards: [{
-				id: "17794BDCB6A0B843"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 12.0d
-			y: 1.5d
-			dependencies: ["741590B8F8611917"]
-			id: "52694A29448609A1"
-			tasks: [{
-				id: "080BADCA38B1B199"
-				type: "item"
-				item: {
-					id: "occultism:chalk_white"
-					Count: 1b
-					tag: {
-						Damage: 0
-					}
-				}
-			}]
-			rewards: [{
-				id: "722683F252B4BF61"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 15.75d
-			y: 3.0d
-			shape: "diamond"
-			subtitle: "Shiny"
-			dependencies: ["5851FF0B25F12972"]
-			size: 1.5d
-			id: "164BE99067597895"
-			tasks: [{
-				id: "14615AAD9E928199"
-				type: "item"
-				item: "naturesaura:gold_leaf"
-			}]
-			rewards: [
-				{
-					id: "65DDC94ECA71509C"
-					type: "item"
-					item: {
-						id: "patchouli:guide_book"
-						Count: 1b
-						tag: {
-							"patchouli:book": "naturesaura:book"
-						}
-					}
-				}
-				{
-					id: "07519B96CD12C088"
-					type: "item"
-					item: "kubejs:crypto_currency"
-				}
-			]
-		}
-		{
-			x: 14.5d
 			y: 4.0d
-			subtitle: "Golden Dust "
-			dependencies: [
-				"164BE99067597895"
-				"52694A29448609A1"
-				"78F619ABA021D434"
-				"03241CC25F0AB160"
-				"7312A08BC35E567B"
-			]
-			id: "07F59BE228F4E17A"
-			tasks: [{
-				id: "37CB6224C4506CE9"
-				type: "item"
-				item: "naturesaura:gold_powder"
-				count: 16L
-			}]
-			rewards: [{
-				id: "4CBB6A3E8498B950"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 6.0d
-			y: 6.0d
-			dependencies: ["5851FF0B25F12972"]
-			id: "54AA60A28A795CC6"
-			tasks: [{
-				id: "617CDC936638D6CC"
-				type: "item"
-				item: "occultism:tallow"
-			}]
-			rewards: [{
-				id: "2CFC523073760318"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 17.0d
-			y: 4.0d
-			subtitle: "Using The Air arround"
-			dependencies: ["164BE99067597895"]
-			id: "2743E28F0C240124"
-			tasks: [
-				{
-					id: "49ECBFF81DB8E03D"
-					type: "item"
-					item: "naturesaura:wood_stand"
-					count: 8L
-				}
-				{
-					id: "6B801AD732874DA9"
-					type: "item"
-					item: "minecraft:oak_sapling"
-				}
-			]
-			rewards: [{
-				id: "370350C2948E3413"
-				type: "item"
-				item: "kubejs:crypto_currency"
-			}]
-		}
-		{
-			x: 15.75d
-			y: 6.0d
 			shape: "gear"
-			subtitle: "Made With Magic™"
-			dependencies: [
-				"07F59BE228F4E17A"
-				"2743E28F0C240124"
-			]
+			subtitle: "Blood infused ™"
+			dependencies: ["2B0E65599245EAE3"]
 			size: 1.5d
 			id: "421E7B2D832C1345"
 			tasks: [{
@@ -430,9 +39,10 @@
 		}
 		{
 			x: -1.5d
-			y: 0.0d
+			y: 4.0d
+			shape: "diamond"
 			dependencies: ["5851FF0B25F12972"]
-			size: 1.5d
+			size: 2.0d
 			id: "5FE402368B5DB3D7"
 			tasks: [{
 				id: "451E53E397499B1D"
@@ -459,7 +69,7 @@
 			subtitle: "Guide through Mana And Artifice"
 			description: ["Note: Mana and artifice's flowers can be found in the mining dimension"]
 			dependencies: ["5851FF0B25F12972"]
-			size: 2.0d
+			size: 1.5d
 			id: "031F282A6C8C4E03"
 			tasks: [{
 				id: "595351307F4CC031"
@@ -660,8 +270,8 @@
 			}]
 		}
 		{
-			x: -1.5d
-			y: 17.5d
+			x: -4.5d
+			y: 16.0d
 			subtitle: "better than ink sacs"
 			dependencies: ["756745827AC1E9E7"]
 			dependency_requirement: "one_completed"
@@ -679,8 +289,8 @@
 			}]
 		}
 		{
-			x: -4.5d
-			y: 17.5d
+			x: -3.0d
+			y: 19.0d
 			subtitle: "paper but for SPELLS"
 			hide_dependency_lines: true
 			dependencies: ["031F282A6C8C4E03"]
@@ -714,8 +324,8 @@
 			}]
 		}
 		{
-			x: 0.0d
-			y: 16.0d
+			x: -4.5d
+			y: 14.5d
 			hide_dependency_lines: true
 			dependencies: ["732FDB44932D68A9"]
 			id: "756745827AC1E9E7"
@@ -747,7 +357,7 @@
 			y: 9.25d
 			shape: "diamond"
 			subtitle: "Guide Through Mahou Tsukai"
-			size: 2.0d
+			size: 1.5d
 			id: "60695B92E5805C10"
 			tasks: [{
 				id: "3D26A9FC956AE889"
@@ -843,6 +453,60 @@
 						}
 					}
 				}
+			}]
+		}
+		{
+			x: 3.5d
+			y: 4.0d
+			subtitle: "Bloody Magic"
+			dependencies: [
+				"69A50449792F0965"
+				"13917EC28FAF93E5"
+			]
+			id: "0406A870A94A964B"
+			tasks: [{
+				id: "1DEDCD00AC2C2467"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 4.0d
+			subtitle: "Technically it's not blood"
+			dependencies: ["5FE402368B5DB3D7"]
+			id: "69A50449792F0965"
+			tasks: [{
+				id: "1559AABCD4F4E2EA"
+				type: "item"
+				item: "hexerei:blood_sigil"
+			}]
+		}
+		{
+			x: 1.0d
+			y: 5.5d
+			subtitle: "Would you like my blood ?"
+			dependencies: ["5FE402368B5DB3D7"]
+			id: "13917EC28FAF93E5"
+			tasks: [{
+				id: "795553E1B1253DC9"
+				type: "item"
+				item: {
+					id: "bloodmagic:sacrificialdagger"
+					Count: 1b
+					tag: { }
+				}
+			}]
+		}
+		{
+			x: 6.0d
+			y: 4.0d
+			dependencies: ["0406A870A94A964B"]
+			id: "2B0E65599245EAE3"
+			tasks: [{
+				id: "2E4027803642D3DC"
+				type: "item"
+				item: "kubejs:raw_andesite_alloy"
 			}]
 		}
 	]

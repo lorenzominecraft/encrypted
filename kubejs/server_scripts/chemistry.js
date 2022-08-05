@@ -19,6 +19,36 @@ var cyan = "minecraft:cyan_concrete"
 
 onEvent('recipes', e => {
 
+
+    e.remove({id: "alchemistry:combiner/ingot_aluminum"})
+    e.remove({id: "alchemistry:combiner/ingot_zinc"})
+    e.remove({id: "alchemistry:combiner/ingot_cobalt"})
+    e.remove({id: "alchemistry:combiner/ingot_nickel"})
+    e.remove({id: "alchemistry:combiner/ingot_uranium"})
+    e.remove({id: "alchemistry:combiner/ingot_platinum"})
+    e.remove({id: "alchemistry:combiner/ingot_osmium"})
+    e.remove({id: "alchemistry:combiner/ingot_copper"})
+    e.remove({id: "alchemistry:combiner/ingot_lead"})
+    e.remove({id: "alchemistry:combiner/ingot_tin"})
+    e.remove({id: "alchemistry:combiner/ingot_silver"})
+    e.remove({id: "alchemistry:combiner/ingot_iridium"})
+    e.remove({id: "alchemistry:combiner/compound_beta_carotene"})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     e.shaped("8x minecraft:light_gray_concrete", [
         'BBB',
         'BEB',

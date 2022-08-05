@@ -1,0 +1,13 @@
+{
+  "type": "bloodmagic:altar",
+  "input": {
+    "item": "kubejs:raw_andesite_alloy"
+  },
+  "output": {
+    "item": "create:andesite_alloy"
+  },
+  "upgradeLevel": 0,
+  "altarSyphon": 1240,
+  "consumptionRate": 5,
+  "drainRate": 5
+}

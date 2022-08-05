@@ -10,7 +10,7 @@ console.info('Hello, World! (You will see this line every time server resources 
 
 onEvent('item.tooltip', tooltip => {
   // Add tooltip to all of these items
-  tooltip.add(['chemlib:element_hydrogen', 'chemlib:element_carbon'], Text.red("can be used as furnace fuel"))
+  //tooltip.add(['chemlib:element_hydrogen', 'chemlib:element_carbon'], Text.red("can be used as furnace fuel"))
 
 })
 
@@ -45,11 +45,15 @@ onEvent('recipes', event => {
 	event.remove({id: "extendedcrafting:handheld_table"}) 
 	event.remove({output: '#forge:concrete_powders'})
     
+    event.remove({input: '#alltheores:ore_hammer'})
+
     event.remove({output: 'naturesaura:gold_fiber'})
     event.remove({output: 'exnihilosequentia:end_cake'})					
-	event.remove({input: '#forge:concrete_powders'}) 
-     					
-	event.remove({output: '#forge:concrete'})
+	event.remove({input: '#forge:concrete_powders'})
+
+    event.remove({input: 'immersiveengineering:hammer'})  					
+	
+    event.remove({output: '#forge:concrete'})
     event.remove({output: 'naturesaura:gold_powder'})						
 	event.remove({type: 'exnihilosequentia:fluid_transform'})
 	event.remove({type: 'exnihilosequentia:sieve'})
@@ -61,15 +65,17 @@ onEvent('recipes', event => {
     
     event.remove({mod: 'nameless_trinkets'})
 
+    event.remove({mod: 'compactmachines'})
+
     event.remove({output: 'alltheores:steel_dust'})
     event.remove({output: 'mob_grinding_utils:gm_chicken_feed_cursed'})		
+    event.remove({output: 'mob_grinding_utils:gm_chicken_feed'})	
     
-    event.remove({output: '#encrypted:atm_gears'})
+    event.remove({output: '#encrypted:to_dis'})
     event.remove({output: 'cobblefordays:tier_2'})
     event.remove({output: 'cobblefordays:tier_3'})
     event.remove({output: 'cobblefordays:tier_4'})
     event.remove({output: 'cobblefordays:tier_5'})
-    
 
 	event.replaceInput({id: 'rsinfintybooster:infinity_card'}, 'minecraft:nether_star', "kubejs:creative_essence")
     event.replaceInput({id: 'minecraft:writable_book'}, 'minecraft:ink_sac', "#forge:dyes/black")
@@ -82,6 +88,36 @@ onEvent('recipes', event => {
     event.shapeless('allthemodium:demonic_log',['forbidden_arcanus:cherrywood_log','kubejs:encrypted_matter'])
 
     event.custom({type: "tconstruct:melting", ingredient:{tag: "forge:dusts/redstone"}, result:{fluid: "thermal:redstone", amount: 100}, temperature: 250, time: 80})
+    //event.custom({type: "tconstruct:melting", ingredient:{tag: "forge:dusts/glowstone"}, result:{fluid: "thermal:glowstone", amount: 250}, temperature: 250, time: 80})
+    // Zinc
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_cast"}, cast_consumed: false, fluid:{name: "tconstruct:molten_zinc", amount:90}, result:"alltheores:zinc_ingot", cooling_time:40})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_zinc", amount:90}, result:"alltheores:zinc_ingot", cooling_time:40})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_red_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_zinc", amount:90}, result:"alltheores:zinc_ingot", cooling_time:40})
+
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_cast"}, cast_consumed: false, fluid:{name: "tconstruct:molten_zinc", amount:10}, result:"alltheores:zinc_nugget", cooling_time:15})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_zinc", amount:10}, result:"alltheores:zinc_nugget", cooling_time:15})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_red_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_zinc", amount:10}, result:"alltheores:zinc_nugget", cooling_time:15})
+
+    event.remove({id: 'tconstruct:smeltery/casting/metal/zinc'})		
+    event.remove({id: 'tconstruct:smeltery/casting/metal/zinc/nugget_gold_cast'})
+    
+    // Brass 
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_cast"}, cast_consumed: false, fluid:{name: "tconstruct:molten_brass", amount:90}, result:"alltheores:brass_ingot", cooling_time:40})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_brass", amount:90}, result:"alltheores:brass_ingot", cooling_time:40})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:ingot_red_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_brass", amount:90}, result:"alltheores:brass_ingot", cooling_time:40})
+
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_cast"}, cast_consumed: false, fluid:{name: "tconstruct:molten_brass", amount:10}, result:"alltheores:brass_nugget", cooling_time:15})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_brass", amount:10}, result:"alltheores:brass_nugget", cooling_time:15})
+    event.custom({type:"tconstruct:casting_table", cast:{item:"tconstruct:nugget_red_sand_cast"}, cast_consumed: true, fluid:{name: "tconstruct:molten_brass", amount:10}, result:"alltheores:brass_nugget", cooling_time:15})
+
+
+
+
+    event.replaceInput({input: '#forge:ingots/zinc'}, '#forge:ingots/zinc', 'alltheores:zinc_ingot')
+    event.replaceInput({input: '#forge:nuggets/zinc'}, '#forge:nuggets/zinc', 'alltheores:zinc_nugget')
+    
+    event.replaceInput({input: '#forge:ingots/brass'}, '#forge:ingots/brass', 'alltheores:brass_ingot')
+    event.replaceInput({input: '#forge:nuggets/brass'}, '#forge:nuggets/brass', 'alltheores:brass_nugget')
     
     event.replaceInput({id: 'beyond_earth:oxygen_loader'}, 'minecraft:furnace', 'thermal:machine_frame')
     event.replaceInput({id: 'beyond_earth:compressor'}, 'minecraft:furnace', 'thermal:machine_frame')
@@ -90,7 +126,8 @@ onEvent('recipes', event => {
     event.stonecutting('ae2:engineering_processor_press','ae2:sky_stone_block')
     event.stonecutting('ae2:logic_processor_press','ae2:sky_stone_block')
     event.stonecutting('ae2:silicon_press','ae2:sky_stone_block')
-
+    
+    event.replaceInput({id: 'tempad:tempad'}, 'minecraft:beacon', 'kubejs:encrypted_ingot')
 
     event.smelting("kubejs:encrypted_ingot", "kubejs:encrypted_ore")
     event.smelting("compressium:stone_1", "compressium:cobblestone_1")
@@ -98,8 +135,33 @@ onEvent('recipes', event => {
     event.smelting("compressium:stone_3", "compressium:cobblestone_3")
     event.smelting("compressium:stone_4", "compressium:cobblestone_4")
     event.smelting("compressium:stone_5", "compressium:cobblestone_5")
+    
+    // blood altar
+    event.remove({output: 'bloodmagic:altar'})
+    event.shaped('bloodmagic:altar', [
+    'SBS',
+    'SFS',
+    'MSG'],
+    {
+        M: 'chemlib:ingot_manganese',
+        S: 'chemlib:ingot_selenium',
+        G: 'chemlib:ingot_gallium',
+        S: '#forge:stone',
+        B: 'hexerei:blood_sigil',
+        F: 'minecraft:furnace'
+    })
+    // sacrificial knife
+    event.remove({id: 'bloodmagic:sacrificial_dagger'})
+    // andesite mixture
+    event.shaped('kubejs:raw_andesite_alloy', [
+        'IA',
+        'AI'],
+        {
+            A: '#forge:andesite',
+            I: '#forge:nuggets/iron'
+        })
 
-    // cobblegens
+    // cobble gen 2 
     event.shaped('cobblefordays:tier_2', [
     'AAA',
     'ASA',
@@ -109,7 +171,7 @@ onEvent('recipes', event => {
         A: '#forge:cobblestone'
     })
 
-    // cobblegens
+    // cobble gen 3
     event.shaped('cobblefordays:tier_3', [
     'AAA',
     'ASA',

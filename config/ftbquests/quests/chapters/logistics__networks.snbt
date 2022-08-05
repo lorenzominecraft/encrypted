@@ -178,7 +178,7 @@
 			tasks: [{
 				id: "08EE4C74166B0F3E"
 				type: "item"
-				item: "fluxnetworks:flux_plug"
+				item: "fluxnetworks:flux_point"
 			}]
 		}
 		{

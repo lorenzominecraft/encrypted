@@ -161,7 +161,7 @@
 			dependencies: ["4768EAA9E51ACB89"]
 			id: "4EEFF1FCAE0AE357"
 			tasks: [{
-				id: "3F1B67BE44D183AD"
+				id: "14A2CDDC645E9451"
 				type: "item"
 				title: "Any #forge:workbench"
 				item: {
